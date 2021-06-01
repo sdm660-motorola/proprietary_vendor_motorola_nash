@@ -6,27 +6,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "MotoSignatureApp",
-	owner: "motorola",
-	apk: "proprietary/app/MotoSignatureApp/MotoSignatureApp.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "ModFmwkProxyService",
-	owner: "motorola",
-	apk: "proprietary/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "ModService",
 	owner: "motorola",
 	apk: "proprietary/priv-app/ModService/ModService.apk",
@@ -48,9 +27,30 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+	name: "MotoSignatureApp",
+	owner: "motorola",
+	apk: "proprietary/system/app/MotoSignatureApp/MotoSignatureApp.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
+	name: "ModFmwkProxyService",
+	owner: "motorola",
+	apk: "proprietary/system/priv-app/ModFmwkProxyService/ModFmwkProxyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
 dex_import {
 	name: "com.motorola.motosignature",
 	owner: "motorola",
-	jars: ["proprietary/framework/com.motorola.motosignature.jar"],
+	jars: ["proprietary/system/framework/com.motorola.motosignature.jar"],
 }
 
