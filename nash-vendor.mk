@@ -397,8 +397,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/nash/proprietary/vendor/lib64/sensors.tof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.tof.so
 
 PRODUCT_PACKAGES += \
-    ModService \
-    ProjectorApp \
     MotoSignatureApp \
     ModFmwkProxyService \
+    ModService \
+    ProjectorApp \
     com.motorola.motosignature
