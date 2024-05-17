@@ -48,6 +48,18 @@ android_app_import {
 	privileged: true,
 }
 
+android_app_import {
+	name: "ims",
+	owner: "motorola",
+	apk: "proprietary/product/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
 dex_import {
 	name: "com.motorola.motosignature",
 	owner: "motorola",
