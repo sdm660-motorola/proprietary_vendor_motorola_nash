@@ -403,3 +403,7 @@ PRODUCT_PACKAGES += \
     ProjectorApp \
     ims \
     com.motorola.motosignature
+
+PRODUCT_PACKAGES += \
+    libmodhw_libmodhw_symlink64 \
+    libvibratorhw_libvibratorhw_symlink64

@@ -70,3 +70,15 @@ dex_import {
 	jars: ["proprietary/system/framework/com.motorola.motosignature.jar"],
 }
 
+install_symlink {
+	name: "libmodhw_libmodhw_symlink64",
+	installed_location: "system/priv-app/ModFmwkProxyService/lib/arm64/libmodhw.so",
+	symlink_target: "/system/lib64/libmodhw.so",
+}
+
+install_symlink {
+	name: "libvibratorhw_libvibratorhw_symlink64",
+	installed_location: "system/priv-app/ModFmwkProxyService/lib/arm64/libvibratorhw.so",
+	symlink_target: "/system/lib64/libvibratorhw.so",
+}
+
